@@ -1,0 +1,15 @@
+<html><body>
+<button onclick="changeColor()">click here</button>
+<script>
+var place=0;
+function changeColor(){
+//your color list
+var colorList=["red","green","blue","yellow"];
+//set the color
+document.body.style.backgroundColor=colorList[place];
+place++;
+// if place is greater than the list size,reset
+if (place==colorList.length) place=0;
+}
+
+</script></body></html>
